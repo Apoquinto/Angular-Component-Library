@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SelectableListComponent } from './components/selectable-list/selectable-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SelectableListComponent
   ],
   imports: [
     BrowserModule,
