@@ -1,1 +1,12 @@
-<p>selectable-list works!</p>
+<div class="toggle" (click)="toggleCollapsable()">{{ title }}</div>
+<ul class="list" [hidden]="isCollapsed">
+  <li *ngFor="let item of items">
+    <label
+      ><input
+        (click)="toggleSelection($event, item)"
+        type="checkbox"
+        id="item"
+      />{{ item }}</label
+    >
+  </li>
+</ul>

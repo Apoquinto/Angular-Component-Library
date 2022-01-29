@@ -1,0 +1,11 @@
+.toggle {
+  user-select: none;
+}
+
+.list {
+  position: absolute;
+}
+
+.list li input {
+  margin-right: 0.5rem;
+}
