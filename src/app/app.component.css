@@ -1,3 +1,4 @@
+/* Display CSS */
 main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -17,6 +18,31 @@ main {
 
 .component-display {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000005;
+}
+
+/* Component CSS */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  width: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
