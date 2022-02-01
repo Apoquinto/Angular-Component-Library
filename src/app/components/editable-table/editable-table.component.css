@@ -1,8 +1,20 @@
 .table-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
+  justify-content: center;
 }
 
 table {
+  width: 100%;
+}
+
+th,
+td {
+  width: 1rem;
+}
+
+.add-row-button {
   width: 100%;
 }

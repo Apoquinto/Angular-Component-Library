@@ -2,15 +2,18 @@
   <table>
     <thead>
       <tr>
-        Estudiante
-      </tr>
-      <tr>
-        Calificación
+        <th *ngFor="let column of tableConfig.columns">
+          {{ column || "" }}&nbsp;
+        </th>
       </tr>
     </thead>
     <tbody>
-      <th contenteditable="true">Test</th>
-      <th contenteditable="true">Test</th>
+      <tr *ngFor="let row of tableConfig.data">
+        <td *ngFor="let field of row" contenteditable="true">
+          {{ field || "" }}&nbsp;
+        </td>
+      </tr>
     </tbody>
   </table>
+  <button (click)="addRow()" class="add-row-botton">Add row</button>
 </div>
