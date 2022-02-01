@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TableConfig } from './models/editableTable';
 
 @Component({
   selector: 'app-root',
@@ -6,15 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  public carModels: string[];
-  public carModelsSelected: string[];
+  public tableConfig: TableConfig;
 
   constructor() {
-    this.carModels = ['Mazda', 'Toyota', 'VW', 'Chevrolet'];
-    this.carModelsSelected = [];
-  }
-
-  selectCarModels(event: any): void {
-    this.carModelsSelected = event;
+    this.tableConfig = {
+      columns: ['Estudiantes', 'Calificación'],
+      data: [[]],
+    };
   }
 }
